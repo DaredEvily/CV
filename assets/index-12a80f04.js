@@ -97,8 +97,8 @@ Error generating stack: `+i.message+`
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10%;
     padding: 3% 0%;
+    gap: 10%;
     /* border: 1px solid; */
     }
 
@@ -132,7 +132,47 @@ Error generating stack: `+i.message+`
     @media (max-width:600px){
         flex: 3;
     }
-`,Em=[{Title:"Name",Des:"Ahmad gamal fattouh",Link:"fa-solid fa-user"},{Title:"Address",Des:"Ganoty Bakous, Ramel Second, Alexandria, Egypt.",Link:"fa-solid fa-house"},{Title:"Phone number",Des:"+201274251097",Link:"fa-solid fa-phone"},{Title:"Email address",Des:"ahmedjokar08@gmail.com",Link:"fa-solid fa-envelope"},{Title:"Personal website",url:"https://daredevily.github.io/Personal-website/",Link:"fa-solid fa-link"}],Cm=e=>C.jsxs("div",{class:"card",children:[C.jsx("i",{class:e.icon}),e.url?C.jsx("a",{target:"_blank",href:e.url,children:C.jsx("h3",{children:e.title})}):C.jsx("h3",{children:e.title}),C.jsx("h4",{children:e.des})]}),gn=e=>[...Array(5)].map((t,n)=>{const r=n+1;return C.jsx("i",{className:r<=e?"fa-solid fa-circle":"fa-regular fa-circle"},n)}),_m=()=>C.jsxs(xm,{children:[C.jsx("div",{class:"contain",children:C.jsx("h1",{children:"Ahmad G"})}),C.jsx("div",{class:"sidebarlittercontain",children:C.jsxs("div",{class:"sidebarinside",children:[C.jsx("h2",{children:"Personal details"}),Em.map(e=>C.jsx(Cm,{icon:e.Link,title:e.Title,des:e.Des,url:e.url})),C.jsx("h2",{children:"Languages"}),C.jsxs("ul",{children:[C.jsx("li",{children:"Arabic"}),C.jsx("div",{className:"rate",children:gn(5)})]}),C.jsxs("ul",{children:[C.jsx("li",{children:"english"}),C.jsx("div",{className:"rate",children:gn(3)})]})]})})]}),Pm=bt.div`
+    @media (max-width:450px){
+        font-size:10px;
+        .sidebarinside{
+            width:100%;
+            h2{font-size:15px;text-align:center}
+            ul{
+                display: flex;
+                flex-direction: row;
+                /* border: 1px solid; */
+                width: 100%;
+                margin: 0;
+                justify-content: space-between;
+                font-size:15px;
+            }
+            li{margin-left:12.5%}
+            .rate{
+                /* border:1px solid; */
+                width: 50%;
+                align-self: center;
+                height: auto;
+                margin-right: 3%;
+                i{  
+                    font-size:10px;
+                    width: auto;
+                    text-align: center;
+                }
+            }
+        }
+        .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 20%;
+        i{margin:0%;width:100%;text-align:center}
+        h3,h4{width:100%;text-align:center}
+        h4{width:100%;margin:0}
+        }
+    }
+`,Em=[{Title:"Name",Des:"Ahmad gamal fattouh",Link:"fa-solid fa-user"},{Title:"Address",Des:"Ganoty Bakous, Ramel Second, Alexandria, Egypt.",Link:"fa-solid fa-house"},{Title:"Phone number",Des:"+201274251097",Link:"fa-solid fa-phone"},{Title:"Email address",Des:"ahmedjokar08@gmail.com",Link:"fa-solid fa-envelope"},{Title:"Personal website",url:"https://daredevily.github.io/Personal-website/",Link:"fa-solid fa-link"}],Cm=e=>C.jsxs("div",{class:"card",children:[C.jsx("i",{class:e.icon}),e.url?C.jsx("a",{target:"_blank",href:e.url,children:C.jsx("h3",{children:e.title})}):C.jsx("h3",{children:e.title}),C.jsx("h4",{children:e.des})]}),gn=e=>[...Array(5)].map((t,n)=>{const r=n+1;return C.jsx("i",{className:r<=e?"fa-solid fa-circle":"fa-regular fa-circle"},n)}),_m=()=>C.jsxs(xm,{children:[C.jsx("div",{class:"contain",children:C.jsx("h1",{children:"Ahmad G"})}),C.jsx("div",{class:"sidebarlittercontain",children:C.jsxs("div",{class:"sidebarinside",children:[C.jsx("h2",{className:"h2",children:"Personal details"}),Em.map(e=>C.jsx(Cm,{icon:e.Link,title:e.Title,des:e.Des,url:e.url})),C.jsx("h2",{className:"h22",children:"Languages"}),C.jsxs("ul",{children:[C.jsx("li",{children:"Arabic"}),C.jsx("div",{className:"rate",children:gn(5)})]}),C.jsxs("ul",{children:[C.jsx("li",{children:"english"}),C.jsx("div",{className:"rate",children:gn(3)})]})]})})]}),Pm=bt.div`
     flex: 4;
     display: flex;
     justify-content: center;
