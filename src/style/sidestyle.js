@@ -94,9 +94,13 @@ const _sidebar =styled.div`
     @media (max-width:600px){
         flex: 3;
     }
-    @media (max-width:450px){
+    @media (max-width:600px){
         font-size:10px;
         .sidebarinside{
+            .h22{
+                margin-top: 10%;
+                border-top: 1px solid gray;
+            }
             width:100%;
             h2{font-size:15px;text-align:center}
             ul{
@@ -130,9 +134,11 @@ const _sidebar =styled.div`
         
         gap: 20%;
         i{margin:0%;width:100%;text-align:center}
+        h3{font-weight:900}
         h3,h4{width:100%;text-align:center}
-        h4{width:100%;margin:0}
+        h4{margin:0;font-weight:500}
         }
+
     }
 `
 

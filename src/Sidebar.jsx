@@ -12,7 +12,7 @@ export default ()=>
         </div> 
             <div class="sidebarlittercontain">
                 <div class="sidebarinside">
-                    <h2 className="h2">Personal details</h2>
+                    <h2>Personal details</h2>
                     {cards.map((contact)=>(
                         <Card icon={contact.Link} title={contact.Title} des={contact.Des} url={contact.url}/>
                     ))}

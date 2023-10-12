@@ -8,9 +8,13 @@ const _body =styled.div`
 const _inbody=styled.div`
     height: 100%;
     width: 95%;
-
+    @media (max-width:550px){
+        
+        width: 100%;
+    }
 `
 const _section1=styled.div`
+    width: 100%;
     h1{
         padding: .1% 0%;
     }
@@ -25,7 +29,10 @@ const _section1=styled.div`
         h1{text-align:center;padding:2% 0%}
         ul{text-align:center;list-style:none;padding:1% 0%}
     }
-    
+    @media (max-width:550px){
+        h1{font-size: 20px;}
+        ul{margin: 0;font-size: 15px;}
+    }
 `
 const _section2=styled.div`
     border-bottom: 2px solid #e9e9e9;  
@@ -59,8 +66,7 @@ const _section2=styled.div`
         padding: 1%;
     }
     .card{
-        border-bottom: 1px solid #e9e9e9;
-    
+        border-bottom: 1px solid #e9e9e9;    
         padding: 1% 0%;
     }
     .card:last-child{
@@ -117,13 +123,9 @@ const _section2=styled.div`
             }
             
         }
-            
     }
     border-bottom: none;
-    @media (max-width:800px){
-        .skills{h1{padding:2% 0;text-align:center;}}
-        .education{h1{padding:2% 0;align-self:center}}
-    }
+
     @media (max-width:950px){
                 display: grid;
                 grid-template-columns: 1fr;
@@ -133,15 +135,25 @@ const _section2=styled.div`
                 "education";
                 height: auto;
                 width: 100%;
-                .education .contain .edu h1{
-                    background-color: red;
-                }
                 .card:last-child{
                     border-bottom: 3px solid #e9e9e9;
                 }
                 .skills{border:none}
                 flex: 2;
             }
+        @media (max-width:800px){
+        .skills{h1{padding:2% 0;text-align:center;}}
+        .education{h1{padding:2% 0;align-self:center}}
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .ul{width:100%}
+            .ul li{width:100%;text-align:center}
+            .list{width:400px;padding:0}
+            .list .li{margin-left:20px}
+        }
+    }
 `
 
 
