@@ -59,8 +59,8 @@ const _sidebar =styled.div`
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10%;
     padding: 3% 0%;
+    gap: 10%;
     /* border: 1px solid; */
     }
 
@@ -93,6 +93,46 @@ const _sidebar =styled.div`
     }
     @media (max-width:600px){
         flex: 3;
+    }
+    @media (max-width:450px){
+        font-size:10px;
+        .sidebarinside{
+            width:100%;
+            h2{font-size:15px;text-align:center}
+            ul{
+                display: flex;
+                flex-direction: row;
+                /* border: 1px solid; */
+                width: 100%;
+                margin: 0;
+                justify-content: space-between;
+                font-size:15px;
+            }
+            li{margin-left:12.5%}
+            .rate{
+                /* border:1px solid; */
+                width: 50%;
+                align-self: center;
+                height: auto;
+                margin-right: 3%;
+                i{  
+                    font-size:10px;
+                    width: auto;
+                    text-align: center;
+                }
+            }
+        }
+        .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        gap: 20%;
+        i{margin:0%;width:100%;text-align:center}
+        h3,h4{width:100%;text-align:center}
+        h4{width:100%;margin:0}
+        }
     }
 `
 
