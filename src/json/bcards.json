@@ -1,0 +1,66 @@
+[
+    {
+        "Title": "Proficient in front-end development with a strong foundation in:",
+        "content": [
+            {
+                "lang": "HTML",
+                "lrating": 5
+            },
+            {
+                "lang": "CSS",
+                "lrating": 5
+            },
+            {
+                "lang": "JavaScript",
+                "lrating": 4
+            },
+            {
+                "lang": "jQuery",
+                "lrating": 3
+            },
+            {
+                "lang": "Bootstrap",
+                "lrating": 2
+            }
+        ]
+    },
+    {
+        "Title": "Advanced knowledge of back-end development utilizing:",
+        "content": [
+            {
+                "tools": "MongoDB",
+                "trating": 4
+            },
+            {
+                "tools": "Express",
+                "trating": 3
+            },
+            {
+                "tools": "Node.js",
+                "trating": 4
+            }
+        ]
+    },
+    {
+        "Title": "Familiarity with front-end framework:",
+        "content": [
+            {
+                "framework": "React",
+                "frating": 3
+            }
+        ]
+    },
+    {
+        "Title": "Additional proficiency in programming languages:",
+        "content": [
+            {
+                "llang": "Python",
+                "rating": 4
+            },
+            {
+                "llang": "C++",
+                "rating": 2
+            }
+        ]
+    }
+]
