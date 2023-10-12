@@ -132,9 +132,13 @@ Error generating stack: `+i.message+`
     @media (max-width:600px){
         flex: 3;
     }
-    @media (max-width:450px){
+    @media (max-width:600px){
         font-size:10px;
         .sidebarinside{
+            .h22{
+                margin-top: 10%;
+                border-top: 1px solid gray;
+            }
             width:100%;
             h2{font-size:15px;text-align:center}
             ul{
@@ -168,19 +172,25 @@ Error generating stack: `+i.message+`
         
         gap: 20%;
         i{margin:0%;width:100%;text-align:center}
+        h3{font-weight:900}
         h3,h4{width:100%;text-align:center}
-        h4{width:100%;margin:0}
+        h4{margin:0;font-weight:500}
         }
+
     }
-`,Em=[{Title:"Name",Des:"Ahmad gamal fattouh",Link:"fa-solid fa-user"},{Title:"Address",Des:"Ganoty Bakous, Ramel Second, Alexandria, Egypt.",Link:"fa-solid fa-house"},{Title:"Phone number",Des:"+201274251097",Link:"fa-solid fa-phone"},{Title:"Email address",Des:"ahmedjokar08@gmail.com",Link:"fa-solid fa-envelope"},{Title:"Personal website",url:"https://daredevily.github.io/Personal-website/",Link:"fa-solid fa-link"}],Cm=e=>C.jsxs("div",{class:"card",children:[C.jsx("i",{class:e.icon}),e.url?C.jsx("a",{target:"_blank",href:e.url,children:C.jsx("h3",{children:e.title})}):C.jsx("h3",{children:e.title}),C.jsx("h4",{children:e.des})]}),gn=e=>[...Array(5)].map((t,n)=>{const r=n+1;return C.jsx("i",{className:r<=e?"fa-solid fa-circle":"fa-regular fa-circle"},n)}),_m=()=>C.jsxs(xm,{children:[C.jsx("div",{class:"contain",children:C.jsx("h1",{children:"Ahmad G"})}),C.jsx("div",{class:"sidebarlittercontain",children:C.jsxs("div",{class:"sidebarinside",children:[C.jsx("h2",{className:"h2",children:"Personal details"}),Em.map(e=>C.jsx(Cm,{icon:e.Link,title:e.Title,des:e.Des,url:e.url})),C.jsx("h2",{className:"h22",children:"Languages"}),C.jsxs("ul",{children:[C.jsx("li",{children:"Arabic"}),C.jsx("div",{className:"rate",children:gn(5)})]}),C.jsxs("ul",{children:[C.jsx("li",{children:"english"}),C.jsx("div",{className:"rate",children:gn(3)})]})]})})]}),Pm=bt.div`
+`,Em=[{Title:"Name",Des:"Ahmad gamal fattouh",Link:"fa-solid fa-user"},{Title:"Address",Des:"Ganoty Bakous, Ramel Second, Alexandria, Egypt.",Link:"fa-solid fa-house"},{Title:"Phone number",Des:"+201274251097",Link:"fa-solid fa-phone"},{Title:"Email address",Des:"ahmedjokar08@gmail.com",Link:"fa-solid fa-envelope"},{Title:"Personal website",url:"https://daredevily.github.io/Personal-website/",Link:"fa-solid fa-link"}],Cm=e=>C.jsxs("div",{class:"card",children:[C.jsx("i",{class:e.icon}),e.url?C.jsx("a",{target:"_blank",href:e.url,children:C.jsx("h3",{children:e.title})}):C.jsx("h3",{children:e.title}),C.jsx("h4",{children:e.des})]}),gn=e=>[...Array(5)].map((t,n)=>{const r=n+1;return C.jsx("i",{className:r<=e?"fa-solid fa-circle":"fa-regular fa-circle"},n)}),_m=()=>C.jsxs(xm,{children:[C.jsx("div",{class:"contain",children:C.jsx("h1",{children:"Ahmad G"})}),C.jsx("div",{class:"sidebarlittercontain",children:C.jsxs("div",{class:"sidebarinside",children:[C.jsx("h2",{children:"Personal details"}),Em.map(e=>C.jsx(Cm,{icon:e.Link,title:e.Title,des:e.Des,url:e.url})),C.jsx("h2",{className:"h22",children:"Languages"}),C.jsxs("ul",{children:[C.jsx("li",{children:"Arabic"}),C.jsx("div",{className:"rate",children:gn(5)})]}),C.jsxs("ul",{children:[C.jsx("li",{children:"english"}),C.jsx("div",{className:"rate",children:gn(3)})]})]})})]}),Pm=bt.div`
     flex: 4;
     display: flex;
     justify-content: center;
 `,Nm=bt.div`
     height: 100%;
     width: 95%;
-
+    @media (max-width:550px){
+        
+        width: 100%;
+    }
 `,zm=bt.div`
+    width: 100%;
     h1{
         padding: .1% 0%;
     }
@@ -195,7 +205,10 @@ Error generating stack: `+i.message+`
         h1{text-align:center;padding:2% 0%}
         ul{text-align:center;list-style:none;padding:1% 0%}
     }
-    
+    @media (max-width:550px){
+        h1{font-size: 20px;}
+        ul{margin: 0;font-size: 15px;}
+    }
 `,Tm=bt.div`
     border-bottom: 2px solid #e9e9e9;  
     ul{
@@ -228,8 +241,7 @@ Error generating stack: `+i.message+`
         padding: 1%;
     }
     .card{
-        border-bottom: 1px solid #e9e9e9;
-    
+        border-bottom: 1px solid #e9e9e9;    
         padding: 1% 0%;
     }
     .card:last-child{
@@ -286,13 +298,9 @@ Error generating stack: `+i.message+`
             }
             
         }
-            
     }
     border-bottom: none;
-    @media (max-width:800px){
-        .skills{h1{padding:2% 0;text-align:center;}}
-        .education{h1{padding:2% 0;align-self:center}}
-    }
+
     @media (max-width:950px){
                 display: grid;
                 grid-template-columns: 1fr;
@@ -302,13 +310,23 @@ Error generating stack: `+i.message+`
                 "education";
                 height: auto;
                 width: 100%;
-                .education .contain .edu h1{
-                    background-color: red;
-                }
                 .card:last-child{
                     border-bottom: 3px solid #e9e9e9;
                 }
                 .skills{border:none}
                 flex: 2;
             }
+        @media (max-width:800px){
+        .skills{h1{padding:2% 0;text-align:center;}}
+        .education{h1{padding:2% 0;align-self:center}}
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .ul{width:100%}
+            .ul li{width:100%;text-align:center}
+            .list{width:400px;padding:0}
+            .list .li{margin-left:20px}
+        }
+    }
 `,Rm=[{Title:"Proficient in front-end development with a strong foundation in:",content:[{lang:"HTML",lrating:5},{lang:"CSS",lrating:5},{lang:"JavaScript",lrating:4},{lang:"jQuery",lrating:3},{lang:"Bootstrap",lrating:2}]},{Title:"Advanced knowledge of back-end development utilizing:",content:[{tools:"MongoDB",trating:4},{tools:"Express",trating:3},{tools:"Node.js",trating:4}]},{Title:"Familiarity with front-end framework:",content:[{framework:"React",frating:3}]},{Title:"Additional proficiency in programming languages:",content:[{llang:"Python",rating:4},{llang:"C++",rating:2}]}],Lm=e=>C.jsxs("div",{children:[e.lang&&C.jsxs("ul",{className:"list",children:[C.jsx("li",{className:"li",children:e.lang}),C.jsx("div",{className:"rate",children:gn(e.lrating)})]}),e.tools&&C.jsxs("ul",{className:"list",children:[C.jsx("li",{className:"li",children:e.tools}),C.jsx("div",{className:"rate",children:gn(e.trating)})]}),e.framework&&C.jsxs("ul",{className:"list",children:[C.jsx("li",{className:"li",children:e.framework}),C.jsx("div",{className:"rate",children:gn(e.frating)})]}),e.llang&&C.jsxs("ul",{className:"list",children:[C.jsx("li",{className:"li",children:e.llang}),C.jsx("div",{className:"rate",children:gn(e.rating)})]})]}),jm=()=>Rm.map((e,t)=>C.jsxs("div",{className:"card",children:[C.jsx("ul",{className:"ul",children:C.jsx("li",{children:C.jsx("h3",{children:e.Title})})}),e.content.map((n,r)=>C.jsx(Lm,{lang:n.lang,lrating:n.lrating,tools:n.tools,trating:n.trating,framework:n.framework,frating:n.frating,llang:n.llang,rating:n.rating},r))]},t)),$m=()=>C.jsx(Pm,{children:C.jsxs(Nm,{children:[C.jsxs(zm,{children:[C.jsx("h1",{children:"Continuous Learning:"}),C.jsxs("ul",{children:[C.jsx("li",{children:"Actively engaged in staying informed about the latest advancements and industry trends in full stack development."}),C.jsx("li",{children:"Dedicated to continuous learning, participating in online courses, workshops, and personal projects to augment skills and knowledge base."}),C.jsx("li",{children:"Currently enhancing proficiency in C++ and focusing on mastering data structures and algorithms."})]})]}),C.jsxs(Tm,{children:[C.jsxs("div",{className:"skills",children:[C.jsx("h1",{children:"Skills:"}),C.jsx(jm,{})]}),C.jsx("div",{className:"education",children:C.jsxs("div",{className:"contain",children:[C.jsx("h1",{children:"Education:"}),C.jsxs("div",{className:"edu",children:[C.jsx("i",{class:"fa-solid fa-graduation-cap i"}),C.jsxs("p",{children:["GIS Bachelor Degree ",C.jsx("br",{}),"Faculty Of Arts - Alexandria University"]}),C.jsx("div",{className:"date",children:"Oct 2021 - Oct 2025"})]}),C.jsxs("div",{className:"edu",children:[C.jsx("i",{class:"fa-solid fa-globe i"}),C.jsxs("p",{children:["[Udemy] - The Complete 2023 Web Development Bootcamp ",C.jsx("br",{}),"By Dr. Angela Yu"]}),C.jsx("div",{className:"date",children:"June 2022 - May 2023"})]})]})})]})]})}),Om=()=>C.jsxs(km,{children:[C.jsx(_m,{}),C.jsx($m,{})]});const Im=document.getElementById("root");Hi.createRoot(Im).render(C.jsx(C.Fragment,{children:C.jsx(Om,{})}));
