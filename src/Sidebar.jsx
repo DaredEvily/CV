@@ -30,5 +30,10 @@ export default ()=>
             </div>
         
     </_sidebar>
+        // {
+        //     "Title": "Phone number",
+        //     "Des": "+201274251097",           To add In Json scards.json
+        //     "Link": "fa-solid fa-phone"
+        // },
         )
     }
